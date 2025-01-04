@@ -37,3 +37,14 @@ def addTwoNumbers(l1: list[ListNode], l2: list[ListNode]) -> list[list[ListNode]
     
     return l1
 
+
+# Takeaways 
+    # Segment away conditional question logic from traversal where possible 
+        # For instance, carrying over and modfiying digits should not be done in the same block scope as moving to the next node
+
+        # The only overlap is when creating new nodes, deleting old nodes or merging together. 
+        # Even then, carry logic is done separately here
+
+        # Break down traversal into simpler use cases if possible. In this example, uneven Linked Lists are padded out.
+
+        
